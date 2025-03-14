@@ -1,0 +1,10 @@
+<h1>Loan Payment Calculation</h1>
+
+<p>APR: <%= (params[:apr].to_f).round(4) %>%</p>
+<p>Years: <%= params[:years] %></p>
+<p>Principal: $<%= sprintf("%.2f", @principal) %></p>
+
+<h2>Monthly Payment: $<%= sprintf("%.2f", @monthly_payment) %></h2>
+
+<a href="/payment/new">Back</a>
+
