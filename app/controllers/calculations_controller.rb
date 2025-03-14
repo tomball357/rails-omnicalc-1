@@ -50,6 +50,5 @@ class CalculationsController < ApplicationController
 
     render "random_results"
   end
-  end
   
 end
