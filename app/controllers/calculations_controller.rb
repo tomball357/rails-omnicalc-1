@@ -41,12 +41,15 @@ class CalculationsController < ApplicationController
     render "random_form"
   end
 
+  
   def random_results
     @min = params[:min].to_f
     @max = params[:max].to_f
 
     @result = rand(@min..@max).round(16)
-    
+
     render "random_results"
   end
+  end
+  
 end

@@ -1,11 +1,11 @@
 <h1>Random Number Generator</h1>
 
-<form action="/random/results">
+<form action="/random/results" method="get">
   <label for="min">Minimum:</label>
-  <input type="text" id="min" name="min">
+  <input type="text" id="min" name="min" required>
 
   <label for="max">Maximum:</label>
-  <input type="text" id="max" name="max">
+  <input type="text" id="max" name="max" required>
 
-  <button type="submit">Generate Random Number</button>
+  <button type="submit">Pick random number</button>
 </form>
